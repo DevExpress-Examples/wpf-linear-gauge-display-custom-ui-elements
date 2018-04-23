@@ -1,0 +1,31 @@
+﻿<Window x:Class="LinearGauge_CustomElement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxga="http://schemas.devexpress.com/winfx/2008/xaml/gauges"
+        Title="MainWindow" Height="450" Width="325">
+    <Grid>
+        <dxga:LinearGaugeControl Name="linearGaugeControl1" Width="170" >
+            <dxga:LinearGaugeControl.Scales>
+                <dxga:LinearScale >
+                    <dxga:LinearScale.CustomElements>
+                        <dxga:ScaleCustomElement VerticalAlignment="Top" HorizontalAlignment="Right">
+                            <Button Name="button1" Content="Up" Width="40"  Click="button1_Click" />
+                        </dxga:ScaleCustomElement>
+                        <dxga:ScaleCustomElement VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                            <Button Name="button2" Content="Down" Width="40" Click="button2_Click" />
+                        </dxga:ScaleCustomElement>
+                    </dxga:LinearScale.CustomElements>
+                    <dxga:LinearScale.LevelBars >
+                        <dxga:LinearScaleLevelBar x:Name="bar"  Value="50" />
+                    </dxga:LinearScale.LevelBars >
+                    <dxga:LinearScale.Layers>
+                        <dxga:LinearScaleLayer />
+                    </dxga:LinearScale.Layers>
+                </dxga:LinearScale>
+            </dxga:LinearGaugeControl.Scales>
+            <dxga:LinearGaugeControl.Model>
+                <dxga:LinearCleanWhiteModel />
+            </dxga:LinearGaugeControl.Model>
+        </dxga:LinearGaugeControl>
+    </Grid>
+</Window>
