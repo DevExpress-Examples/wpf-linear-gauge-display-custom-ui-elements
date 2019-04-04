@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/LinearGauge_CustomElement/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/LinearGauge_CustomElement/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/LinearGauge_CustomElement/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/LinearGauge_CustomElement/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/LinearGauge_CustomElement/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/LinearGauge_CustomElement/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to use custom elements in the Linear Gauge control
 
