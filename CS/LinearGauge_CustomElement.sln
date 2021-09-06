@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearGauge_CustomElement", "LinearGauge_CustomElement\LinearGauge_CustomElement.csproj", "{6230802A-7DBB-4EBB-8EAF-82D6EA11682C}"
 EndProject
 Global
