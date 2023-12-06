@@ -3,22 +3,50 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3537)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Linear Gauge - Display Custom UI Elements
+
+This example displays **Up** and **Down** buttons within the linear scale. The **Up** button increases the scale value. The **Down** button decreases the scale value.
+
+![WPF Linear Gauge - Display Custom UI Elements, DevExpress](https://raw.githubusercontent.com/DevExpress-Examples/how-to-use-custom-elements-in-the-linear-gauge-control-e3537/22.2.2%2B/i/wpf-linear-gauge-with-custom-ui-element-devexpress.png)
+
+## Implementation Details
+
+Create a [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.ScaleCustomElement) object with a custom UI element and add the object to the [Scale.CustomElements](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.Scale.CustomElements) collection to display cstom content within a scale. This example creates two `ScaleCustomElement` objects with **Up** and **Down** buttons:
+
+```xaml
+<dxga:LinearScale >
+    <dxga:LinearScale.CustomElements>
+        <dxga:ScaleCustomElement VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Button Name="button1" Content="Up" Width="59"  Click="button1_Click" />
+        </dxga:ScaleCustomElement>
+        <dxga:ScaleCustomElement VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button Name="button2" Content="Down" Width="59" Click="button2_Click" />
+        </dxga:ScaleCustomElement>
+    </dxga:LinearScale.CustomElements>
+</dxga:LinearScale>
+```
+
+The `Click` event of buttons is handled to allow users to change the scale value:
+
+```csharp
+private void button1_Click(object sender, RoutedEventArgs e) {
+    if (bar.Value < 100)
+        bar.Value += 10;
+}
+private void button2_Click(object sender, RoutedEventArgs e) {
+    if (bar.Value > 0)
+        bar.Value -= 10;
+}
+```
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/LinearGauge_CustomElement/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/LinearGauge_CustomElement/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/LinearGauge_CustomElement/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/LinearGauge_CustomElement/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to use custom elements in the Linear Gauge control
 
 
-<p>This example illustrates how to add two buttons as custom elements to the linear scale and use them to increase or decrease the current scale value. </p>
+## Documentation
 
-
-<h3>Description</h3>
-
-<p>For this, create two <strong>ScaleCustomElement</strong> objects and add a button control to each custom element.</p><p>Finally, to provide the capability for end-users to change the scale&#39;s value, handle the <strong>button1_Click</strong> and<strong> button2_Click</strong> events and write code that will increment and decrement the scale value. </p>
-
-<br/>
-
-
+* [Scale.CustomElements](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.Scale.CustomElements)
+* [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.ScaleCustomElement)
