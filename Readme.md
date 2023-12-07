@@ -12,7 +12,7 @@ This example displays **Up** and **Down** buttons within the linear scale. The *
 
 ## Implementation Details
 
-Create a [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.ScaleCustomElement) object with a custom UI element and add the object to the [Scale.CustomElements](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.Scale.CustomElements) collection to display cstom content within a scale. This example creates two `ScaleCustomElement` objects with **Up** and **Down** buttons:
+Create a [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.ScaleCustomElement) object with a custom UI element and add the object to the [Scale.CustomElements](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.Scale.CustomElements) collection to display custom content within a scale. This example creates two `ScaleCustomElement` objects with **Up** and **Down** buttons:
 
 ```xaml
 <dxga:LinearScale >
@@ -27,7 +27,7 @@ Create a [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gau
 </dxga:LinearScale>
 ```
 
-The `Click` event of buttons is handled to allow users to change the scale value:
+The `Click` event of each button is handled to allow users to change the scale value:
 
 ```csharp
 private void button1_Click(object sender, RoutedEventArgs e) {
