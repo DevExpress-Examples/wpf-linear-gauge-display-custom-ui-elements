@@ -52,7 +52,7 @@ private void button2_Click(object sender, RoutedEventArgs e) {
 * [Scale.CustomElements](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.Scale.CustomElements)
 * [ScaleCustomElement](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gauges.ScaleCustomElement)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-linear-gauge-display-custom-ui-elements&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-linear-gauge-display-custom-ui-elements&~~~was_helpful=no)
 
